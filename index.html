@@ -1,223 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        header{
-            background-color: rgb(0, 0, 0);
-            padding: 20px 25px;
-        }
-        nav{
-            display: inline-block;
-            width: calc(100% - 103px);
-            text-align: right;
-        }
-        nav ul{
-            list-style-type: none;
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Roselab</title>
+		<link rel="stylesheet" href="src/style.css">
+        <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon">
+	</head>
 
-        }nav ul li{
-            display: inline-block;
-            margin: 10px 15px;
+	<body>
+
+		<header>
+			<a href="#" class="roselab">ROSELAB</a>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">Anasayfa</a>
+					</li>
+					<li>
+						<a href="#">Hakkımızda</a>
+					</li>
+					<li>
+						<a href="#">Menü</a>
+					</li>
+					<li>
+						<a href="#">İçecekler</a>
+					</li>
+					<li>
+						<a href="#">Tatlılar</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section id="section-1">
+				<button class="btn-s1">MENÜLERİ GÖRMEK İÇİN TIKLAYINIZ</button>
+			</section>
+
+			<div class="section-container">
+                <div class="card">
+                    <img src="src/img/amirali-mirhashemian-9hIJ4ZLMnZA-unsplash-768x484.jpg" alt="">
+                    <div class="container">
+                        <h2>MAXİ DANA BURGER</h2>
+                        <p>Özel acı sos, double köfte,domates,marul,çedar peyniri.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="src/img/soguk-kahve-yapimi-5-1024x635.jpg" alt="">
+                    <div class="container">
+                        <h2>HOT BREW</h2>
+                        <p>Taze çekilmiş kahve çekirdekleri,süt,yumuşak içim tat.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="src/img/Orman-Meyveli-Pasta.jpg" alt="">
+                    <div class="container">
+                        <h2>Orman Meyveli Pasta</h2>
+                        <p>Ahududu,böğürtlen,taze çilek,sütlü krema ve meyve parçacıkları.</p>
+                    </div>
+                </div>
+            </div>
             
-        }
-        .roselab{
-            color: rgb(162, 20, 20);
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 25px;
-        }
-        nav ul li a{
-            text-decoration: none;
-            color: #fff;
-            padding: 15px 25px;
-            font-size: 22px;
-        }
-        nav ul li a:hover{
-            background-color: #fff;
-            color: black;
-        }
-        /*MENÜ ALTINDAKİ RESİM*/
-
-        #section-1{
-            background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(brooke-lark-M4E7X3z80PQ-unsplash-768x512.jpg);
-            background-position: top;
-            padding: 17px;
-            height: 850px;
-            width: 100%;
-            background-size: cover;
-        }
-        .btn-s1{
-            margin-left: 37%;
-            margin-top: 20%;
-            background-color: rgb(128, 8, 8);
-            color: #fff;
-            padding: 25px 20px;
-            font-size: 20px;
-            border-radius: 7px;
-            transition: color ;
-        }
-        .btn-s1:hover{
-            color:#000000;
-        }
-        /*card*/
-        #section-2{
-            display: flex;
-            justify-content: space-around;
-            margin: 200px 0;
-        }
-        .card{
-            width: 20%;
-            box-shadow: 0 5px 9px 0 rgba(0,0,0,0.4);
-           border-radius: 6px;
-        }
-        .card:hover{
-            opacity: 0.9;
-
-        }
-        .container{
-            padding: 5px 20px;
-
-        }
-        .container p{
-            margin: 20px 0;
-        }
-        img{
-            border-radius: 6px 6px 0 0;
-            width: 100%;
-        }
-        p{
-            font-size: 21px;
-        }
-        #section-3{
-           display: flex; 
-           justify-content: space-around;
-           margin: 200px 0;
-
-        }
-        footer{
-            background-color: black;
-            color:#fff;
-            text-align: center;
-            font-size: 20px;
-            padding: 20px 0;
-
-        }
-        </style>
-    </head>
-    <body>
+            <div class="section-container">
+                <div class="card">
+                    <img src="src/img/cig-borek-tarifi-ferishtah.jpg" alt="">
+                    <div class="container">
+                        <h2>LEZZO ÇİĞ BÖREK</h2>
+                        <p>Eskişehir mutfağından enfes tat. Yağda kızarmış hamur,soğan,kıyma ve harmanlanmış baharat.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="src/img/sangria-1.jpg" alt="">
+                    <div class="container">
+                        <h2>FRUTTİ MEYVE KOKTEYL</h2>
+                        <p>Limon,kivi,portakal,çilek,armut ve 2 çeşit özel meyve şurubu.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="src/img/meyveli-tatli-2_5eff12a5ec26e.jpg" alt="">
+                    <div class="container">
+                        <h2>ÇİLEKLİ BİSKÜVİLİ MUG</h2>
+                        <p>Çilek, petibör bisküvi, krema ve bisküvi parçacıkları.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-container">
+                <div class="card">
+                    <img src="src/img/kabak_begendili_tavuk_sote-640x445.jpg" alt="">
+                    <div class="container">
+                        <h2>KABAK BEĞENDİLİ SOTE</h2>
+                        <p>Taze kabak,semiz otu,kırmızı sivri biber,mantarlı kremalı sos.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="src/img/Frappe-FImage.jpg">
+                    <div class="container">
+                        <h2>BUZLU FRAPPE</h2>
+                        <p>Filtre kahve,laktozsuz süt,çikolata parçacıkları,bolca buz.</p>
+                    </div>
+                </div>
+                <div class="card">
+					<img src="src/img/kusursuz-sutlac-yemekcom.jpg" alt="">
+					<div class="container">
+						<h2>KUSURSUZ FIRINDA SÜTLAÇ</h2>
+						<p>Toprak kasede enfes süt tadı,kısık ateşte pişirilmiş pirinç.</p>
+					</div>
+				</div>
+            </div>
+            
+		</main>
         
-
-    <header>
-        <a href="#" class="roselab">ROSELAB</a>
-        <nav>
-            <ul>
-                <li><a href= "#">Anasayfa</a></li>
-                <li><a href= "#">Hakkımızda</a></li>
-                <li><a href= "#">Menü</a></li>
-                <li><a href= "#">İçecekler</a></li>
-                <li><a href= "#">Tatlılar</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="section-1">
-            <button class="btn-s1">MENÜLERİ GÖRMEK İÇİN TIKLAYINIZ</button>
-
-        </section>
-
-        <section id="section-2">
-            <div class="card">
-                <img src="amirali-mirhashemian-9hIJ4ZLMnZA-unsplash-768x484.jpg" alt="">
-                <div class="container">
-                <h2>MAXİ DANA BURGER</h2>
-                <p>Özel acı sos, double köfte,domates,marul,çedar peyniri.</p>
-            </div>
-         </div>
-
-         <div class="card">
-             <img src="soguk-kahve-yapimi-5-1024x635.jpg" alt="">
-             <div class="container">
-             <h2>HOT BREW</h2>
-             <p>Taze çekilmiş kahve çekirdekleri,süt,yumuşak içim tat.</p>
-        </div>
-     </div>
-        
-        <div class="card">
-             <img src="Orman-Meyveli-Pasta.jpg" alt="">
-             <div class="container">
-             <h2>Orman Meyveli Pasta</h2>
-             <p>Ahududu,böğürtlen,taze çilek,sütlü krema ve meyve parçacıkları.</p>
-    </div>
-    </div>
-
-        </section>
-
-        <section id="section-3">
-            <div class="card">
-                <img src="cig-borek-tarifi-ferishtah.jpg" alt="">
-                <div class="container">
-                <h2>LEZZO ÇİĞ BÖREK</h2>
-                <p>Eskişehir mutfağından enfes tat. Yağda kızarmış hamur,soğan,kıyma ve harmanlanmış baharat.</p>
-            </div>
-         </div>
-
-         <div class="card">
-             <img src="sangria-1.jpg" alt="">
-             <div class="container">
-             <h2>FRUTTİ MEYVE KOKTEYL</h2>
-             <p>Limon,kivi,portakal,çilek,armut ve 2 çeşit özel meyve şurubu.</p>
-        </div>
-     </div>
-     <div class="card">
-             <img src="meyveli-tatli-2_5eff12a5ec26e.jpg" alt="">
-             <div class="container">
-             <h2>ÇİLEKLİ BİSKÜVİLİ MUG</h2>
-             <p>Çilek, petibör bisküvi, krema ve bisküvi parçacıkları.</p>
-    </div>
-    </div>
-
-        </section>
-        <section id="section-3">
-            <div class="card">
-                <img src="kabak_begendili_tavuk_sote-640x445.jpg" alt="">
-                <div class="container">
-                <h2>KABAK BEĞENDİLİ SOTE</h2>
-                <p>Taze kabak,semiz otu,kırmızı sivri biber,mantarlı kremalı sos.</p>
-            </div>
-         </div>
-
-         <div class="card">
-             <img src="Frappe-FImage.jpg">
-             <div class="container">
-             <h2>BUZLU FRAPPE</h2>
-             <p>Filtre kahve,laktozsuz süt,çikolata parçacıkları,bolca buz.</p>
-        </div>
-     </div>
-     <div class="card">
-             <img src="kusursuz-sutlac-yemekcom.jpg" alt="">
-             <div class="container">
-             <h2>KUSURSUZ FIRINDA SÜTLAÇ</h2>
-             <p>Toprak kasede enfes süt tadı,kısık ateşte pişirilmiş pirinç.</p>
-    </div>
-    </div>
-
-        </section>
-
-
-
-</main>
-
-<footer>
-    powered by GÜL PALABIYIK
-</footer>
-</body>
+		<footer> powered by GÜL PALABIYIK </footer>
+	</body>
 </html>
